@@ -20,9 +20,9 @@ namespace Menu
                 Console.WriteLine("4. Division");
                 Console.WriteLine("5. Modulo");
                 Console.WriteLine("6. Salir");
-                Console.WriteLine("");
-                String op = Console.ReadLine();
                 Console.WriteLine("________ Elija una opcion _______________");
+                String op = Console.ReadLine();
+                Console.WriteLine("");
                 Console.WriteLine("Ingrese el primer numero: ");
                 float number1 = float.Parse(Console.ReadLine());
 
@@ -36,22 +36,32 @@ namespace Menu
                     case "1": 
                         float resultado1 = number1 + number2;
                         Console.WriteLine("El resultado es: " + resultado1);
+                        Console.WriteLine("__________________________________________");
+                        Console.WriteLine("");
                         break;
                     case "2":
                         resultado1 = number1 - number2;
                         Console.WriteLine("El resultado es: " + resultado1);
+                        Console.WriteLine("__________________________________________");
+                        Console.WriteLine("");
                         break;
                     case "3":
                         resultado1 = number1 * number2;
                         Console.WriteLine("El resultado es: " + resultado1);
+                        Console.WriteLine("__________________________________________");
+                        Console.WriteLine("");
                         break;
                     case "4":
                         resultado1 = number1 / number2;
                         Console.WriteLine("El resultado es: " + resultado1);
+                        Console.WriteLine("__________________________________________");
+                        Console.WriteLine("");
                         break;
                     case "5":
                         resultado1 = number1 % number2;
                         Console.WriteLine("El resultado es: " + resultado1);
+                        Console.WriteLine("__________________________________________");
+                        Console.WriteLine("");
                         break;
                     case "6":
                         salir = true; 
