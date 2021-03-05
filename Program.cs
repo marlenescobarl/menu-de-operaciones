@@ -14,22 +14,22 @@ namespace Menu
                 Console.WriteLine("|     MENU DE OPERACIONES BASICAS!     |");
                 Console.WriteLine("|______________________________________|");
 
-                Console.WriteLine("Ingrese el primer numero: ");
-                float number1 = float.Parse(Console.ReadLine());
-
-                Console.WriteLine("Ingrese el segundo numero: ");
-                float number2 = float.Parse(Console.ReadLine());
-                
-                Console.WriteLine("____________________________________________");
-
                 Console.WriteLine("1. Suma");
                 Console.WriteLine("2. Resta");
                 Console.WriteLine("3. Multiplicacion");
                 Console.WriteLine("4. Division");
                 Console.WriteLine("5. Modulo");
                 Console.WriteLine("6. Salir");
-                Console.WriteLine();
+                Console.WriteLine("");
                 String op = Console.ReadLine();
+                Console.WriteLine("________ Elija una opcion _______________");
+                Console.WriteLine("Ingrese el primer numero: ");
+                float number1 = float.Parse(Console.ReadLine());
+
+                Console.WriteLine("Ingrese el segundo numero: ");
+                float number2 = float.Parse(Console.ReadLine());
+                
+                Console.WriteLine("__________________________________________");
 
                 switch (op )
                 {
@@ -38,19 +38,19 @@ namespace Menu
                         Console.WriteLine("El resultado es: " + resultado1);
                         break;
                     case "2":
-                        float resultado1 = number1 - number2;
+                        resultado1 = number1 - number2;
                         Console.WriteLine("El resultado es: " + resultado1);
                         break;
                     case "3":
-                        float resultado1 = number1 * number2;
+                        resultado1 = number1 * number2;
                         Console.WriteLine("El resultado es: " + resultado1);
                         break;
                     case "4":
-                        float resultado1 = number1 / number2;
+                        resultado1 = number1 / number2;
                         Console.WriteLine("El resultado es: " + resultado1);
                         break;
                     case "5":
-                        float resultado1 = number1 % number2;
+                        resultado1 = number1 % number2;
                         Console.WriteLine("El resultado es: " + resultado1);
                         break;
                     case "6":
